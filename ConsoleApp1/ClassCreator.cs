@@ -53,7 +53,7 @@ namespace ConsoleApp1
             {
                 датаРождения = DateTime.Now.ToShortDateString();
             }
-            return new Var5Студент(фамилия, имя, отчество, Группа(), датаРождения);
+            return new Var5Студент(фамилия, имя, отчество, Группа(), DateTime.Parse(датаРождения));
         }
         public static Var4Группа Группа()
         {
